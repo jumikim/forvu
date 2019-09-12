@@ -2,48 +2,66 @@ $(function() {
 
 	$('[data-popup-target]').on('click', function(){
 		var activePopup = $(this).attr('data-popup-target');
-		$(activePopup).fadeIn();
 		$('.popup-wrap').fadeIn();
+		$(activePopup).fadeIn();
 		$('body').css('overflow-y', 'hidden');
 	});
 
 	$('.pop-close').on('click', function(){
 		$('.popup-wrap, .popup').fadeOut();
 		$('body').css('overflow-y', 'visible');
+		$('.candy-box').removeClass('candy-next');
 	});
 
+	$('.check-active').on('click', function(){
+		if(!$(this).parent().parent().next().hasClass('dim')){
+			$(this).parent().parent().nextAll().addClass('dim');
+			$('.dim input').attr('disabled', true);
+		} else {
+			$('.dim input').removeAttr('disabled');
+			$(this).parent().parent().nextAll().removeClass('dim');
+		}
+	});
 
-	// select-box
-	$('.select-box button').on('click', function (){
+	$('.btn-round').on('click', function(){
+		if(!$(this).hasClass('on')){
+			$('.category .btn-round').removeClass('on');
+			$(this).addClass('on');
+		}
+		return false;
+	});
+
+	$('.star-add').on('click', function(){
+		if(!$('.review-self').hasClass('self')){
+			$('.review-self').removeClass('self');
+			$('.review-self').addClass('self');
+		}
+		return false;
+	});
+
+	$('.chart-box .btn-more').on('click', function(){
 		if(!$(this).hasClass('open')){
 			$(this).addClass('open');
-			$(this).parent().next().slideDown();
+			$('.more-review').slideDown();
 		} else {
-			$(this).removeClass('open');
-			$(this).parent().next().slideUp();
+			$('.chart-box .btn-more').removeClass('open');
+			$('.more-review').slideUp();
 		}
-	});
-	$('.select-box li a').on('click', function (){
-		$(this).parent().parent().slideUp();
+		return false;
 	});
 
-	$(window).on('scroll', function(){
-		var scroll = $(window).scrollTop();
-		var screenHalf = $(document).height() / 2;
-		if (scroll >= 30) {
-			$('#p-wrapper').addClass('hidden');
-		} else if(scroll <= 30) {
-			$('#p-wrapper').removeClass('hidden');
+	$('.tab-review a').on('click', function(){
+		if(!$(this).parent().hasClass('on')){
+			$('.tab-review li').removeClass('on');
+			$(this).parent().addClass('on');
 		}
-
-		if(scroll >= screenHalf){
-			$('.join-box').addClass('floating');
-		} else if (scroll <= screenHalf){
-			$('.join-box').removeClass('floating');
-		}
+		return false;
 	});
 
-	
+	$('#pop-review-detail .btn-charge').on('click', function(){
+		$('.candy-box').addClass('candy-next');
+	});
+
 
 });
 
