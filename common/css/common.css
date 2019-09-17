@@ -47,6 +47,7 @@ body {overflow-x:hidden;height:100%;-webkit-overflow-scrolling:touch;}
 		background:#999;border-radius:10px;font-size:18px;line-height:60px;color:#fff;text-align:center;
 	}
 	.btn-type01.on {background:#7278e8;}
+	.btn-type01.init {position:relative;bottom:auto;left:auto;width:100%;display:block;margin:0;}
 	.btn-type02 {margin:27px -20px 0;font-size:0;}
 	.btn-type02 a {display:inline-block;width:50%;font-size:14px;line-height:60px;color:#666;text-align:center;}
 	.btn-type02 a:nth-child(1) {border-bottom-left-radius:8px;}
@@ -103,7 +104,8 @@ body {overflow-x:hidden;height:100%;-webkit-overflow-scrolling:touch;}
 		position:absolute;content:'';height:21px;width:21px;left:1px;bottom:1px;background:#7278e8;border-radius:50%;
 		transition:.4s;-webkit-transition:.4s;-ms-transition:.4s;
 	}
-	.switch input:checked + .round-slider:before {transform:translateX(20px);-webkit-transform:translateX(20px);-ms-transform:translateX(20px);}
+	.switch input:checked + .round-slider {background:#7278e8;}
+	.switch input:checked + .round-slider:before {transform:translateX(20px);-webkit-transform:translateX(20px);-ms-transform:translateX(20px);background:#fff;}
 
 	.action-bar {height:60px;background:#7278e8;}
 	.action-bar .back {position:absolute;top:21px;left:20px;}
@@ -366,6 +368,20 @@ body {overflow-x:hidden;height:100%;-webkit-overflow-scrolling:touch;}
 	.info-edit .list-setting li a {padding:0 10px 0 15px;color:#999;}
 	.info-edit .list-setting .text-orange a {color:#ff6200;}
 	.info-edit .btn-type01 {position:relative;display:block;margin:40px 0 20px 0;width:100%;bottom:auto;}
+
+	.withdrawal {padding:60px 20px 0;}
+	.withdrawal .warning {display:block;padding-top:47px;background:url('../../images/ico_warning-big.png') 50% 0 no-repeat;background-size:auto 37px;font-size:20px;line-height:1.45;text-align:center;color:#ff6200;}
+	.withdrawal > p {margin-top:22px;font-size:15px;line-height:1.47;text-align:center;color:#666;}
+	.withdrawal > ul {margin-top:33px;}
+	.withdrawal > ul > li {padding:0 20px;font-size:15px;line-height:1.47;color:#666;}
+	.withdrawal > ol {margin-top:40px;padding:0 20px;}
+	.withdrawal > ol > li {margin-top:20px;font-size:15px;line-height:1.47;color:#7278e8;}
+	.withdrawal > ol > li span {display:block;margin-top:10px;font-size:12px;font-weight:300;line-height:1.5;color:#a5a5a5;}
+	.withdrawal .checkbox {display:block;margin-top:40px;padding:0 20px;}
+	.withdrawal .checkbox.type02 input[type="checkbox"] + label {padding-left:40px;}
+	.withdrawal .checkbox.type02 input[type="checkbox"] + label:before {background-size:auto 25px;width:25px;height:25px;margin-top:-12px;}
+	.withdrawal .btn-type01.init {margin-top:48px;}
+
 
 
 	/* popup */
