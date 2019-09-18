@@ -22,12 +22,17 @@
 			</header>
 			<!-- header // -->
 
-			<section class="join-input facebook">
-				<div class="input-box">
+			<!-- 입력값 비일치 시, <section class="join-input"> 위치에 class="fail" 추가-->
+			<section class="join-input facebook fail">
+				<div class="input-box conf-number overlap">
+					<!-- 중복확인 후, <spaan class="overlap-conf"> 추가 : 중복확인 버튼 none 확인완료 버튼 block -->
 					<span>
 						<label for="mail">이메일</label>
 						<input type="text" id="mail" />
+						<a href="#" class="btn-round">중복확인</a>
+						<a href="#" class="btn-round confirm-f">확인완료</a> 
 					</span>
+					<strong class="notice">▲ 이미 가입된 이메일입니다.</strong>
 				</div>
 				<ul class="input-box">
 					<li>

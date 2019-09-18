@@ -25,42 +25,47 @@
 			<!-- 입력값 비일치 시, <section class="join-input"> 위치에 class="fail" 추가-->
 			<section class="join-input fail">
 				<ul class="input-box">
-					<li>
+					<li class="conf-number overlap">
+						<!-- 중복확인 후, <spaan class="overlap-conf"> 추가 : 중복확인 버튼 none 확인완료 버튼 block -->
 						<span>
 							<label for="mail">이메일</label>
 							<input type="text" id="mail" />
+							<a href="#" class="btn-round">중복확인</a>
+							<a href="#" class="btn-round confirm-f">확인완료</a> 
 						</span>
-						<strong class="notice">▲ 이메일을 입력하세요.(필수)</strong>
+						<!-- <strong class="notice">▲ 이메일을 입력하세요.(필수)</strong> -->
+						<strong class="notice">▲ 이미 가입된 이메일입니다.</strong>
 					</li>
 					<li>
 						<span>
 							<label for="password">비밀번호</label>
-							<input type="password" id="password" />
+							<input type="password" id="password" placeholder="영문, 숫자 포함 8자리 이상" />
 						</span>
+						<strong class="notice">▲ 영문,숫자 포함 8자리 이상 입력하세요.</strong>
 					</li>
 					<li>
 						<span>
 							<label for="pwconfirm">비밀번호 확인</label>
 							<input type="password" id="pwconfirm" />
 						</span>
-						<strong class="notice">▲ 비밀번호가 일치하지 않습니다.</strong>
+						<strong class="notice">▲ 입력하신 비밀번호가 서로 일치하지 않습니다.</strong>
 					</li>
 				</ul>
 				<ul class="input-box">
 					<li>
 						<span>
 							<label for="name">이름</label>
-							<input type="text" id="name" />
+							<input type="text" id="name" placeholder="비익명 리뷰 등록 시 노출됩니다." />
 						</span>
 					</li>
 					<li>
 						<span>
 							<label for="birth">생년월일</label>
-							<input type="text" id="birth" maxlength="8" placeholder="8자" />
+							<input type="text" id="birth" maxlength="8" placeholder="8자리" />
 						</span>
 					</li>
 				</ul>
-				<a href="#" class="btn-type01">다음</a>
+				<a href="./join_user-confirm.html" class="btn-type01">다음</a>
 			</section>
 		</main>
 	</div>

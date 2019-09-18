@@ -27,6 +27,8 @@ $(function() {
 		if(!$(this).hasClass('on')){
 			$('.category .btn-round').removeClass('on');
 			$(this).addClass('on');
+		} else {
+			$(this).removeClass('on');
 		}
 		return false;
 	});
@@ -60,6 +62,34 @@ $(function() {
 
 	$('#pop-review-detail .btn-charge').on('click', function(){
 		$('.candy-box').addClass('candy-next');
+	});
+
+	$('.home .footer a').on('click', function(){
+		if(!$('.footer ul').is(':visible')){
+			$('.footer ul').slideDown();
+			$(this).addClass('open');
+		} else {
+			$('.footer ul').slideUp();
+			$(this).removeClass('open');
+		}
+		return false;
+	});
+
+	// 임시 
+	$('.overlap .btn-round').on('click', function(){
+		if(!$(this).parent().hasClass('overlap-conf')){
+			$(this).parent().addClass('overlap-conf');
+		} else {
+			$(this).parent().removeClass('overlap-conf');
+		}
+	});
+
+	$('.btn-send').on('click', function(){
+		if(!$(this).parent().hasClass('send')){
+			$(this).parent().addClass('send');
+		} else {
+			$(this).parent().removeClass('send');
+		}
 	});
 
 

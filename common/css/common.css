@@ -166,6 +166,10 @@ body {overflow-x:hidden;height:100%;-webkit-overflow-scrolling:touch;}
 	.join-input .input-box li {margin-top:20px;}
 	.join-input .notice {display:none;}
 	.join-input.fail .notice {display:block;}
+	.join-input .overlap {position:relative;}
+	.join-input .overlap .confirm-f {display:none;}
+	.join-input .overlap .overlap-conf .btn-round {display:none;}
+	.join-input .overlap .overlap-conf .confirm-f {display:block;}
 	
 	.join-confirm {padding:30px 20px 30px;}
 	.join-confirm .input-box {position:relative;}
@@ -239,7 +243,7 @@ body {overflow-x:hidden;height:100%;-webkit-overflow-scrolling:touch;}
 		background:url('../../images/ico_upload.png') 50% 25px no-repeat;background-size:auto 27px;font-size:13px;line-height:1.46;letter-spacing:-0.65px;color:#999;
 	}
 
-	.home {padding:0 20px;}
+	.home {padding:0 20px 20px;}
 	.home.ad-banner {padding-bottom:100px;}
 	.home .banner {text-align:center;margin-top:-35px;}
 	.home .banner img {height:190px;}
@@ -292,6 +296,17 @@ body {overflow-x:hidden;height:100%;-webkit-overflow-scrolling:touch;}
 	.home .ad {position:absolute;left:0;bottom:80px;width:100%;text-align:center;}
 	.home .ad img {height:70px;}
 	.home .result-none {margin-top:160px;padding-top:67px;background:url('../../images/ico_symbol.png') 50% 0 no-repeat;background-size:auto 47px;text-align:center;font-size:14px;line-height:1.79;color:#666;}
+
+	.home .footer {position:relative;padding:10px 10px 0;border-top:1px solid #d0d0d0;}
+	.home .footer a {position:absolute;top:15px;right:10px;height:5px;transition:transform .2s;-webkit-transition:transform .2s;-ms-transition:transform .2s;}
+	.home .footer a img {height:5px;}
+	.home .footer a.open {transform:rotate(180deg);-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);}
+	.home .footer > strong {font-size:12px;line-height:16px;color:#d0d0d0;}
+	.home .footer > strong img {height:16px;}
+	.home .footer > strong span {display:inline-block;margin-right:10px;}
+	.home .footer > p {margin-top:10px;font-size:12px;line-height:1.25;color:#d0d0d0;}
+	.home .footer ul {display:none;margin-top:10px;}
+	.home .footer ul li {font-size:12px;line-height:1.33;color:#d0d0d0;}
 
 	.review-detail {padding-bottom:40px;}
 	.review-detail .user-share {position:relative;display:flex;align-items:center;margin-top:-35px;padding:20px;}
