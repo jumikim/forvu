@@ -75,8 +75,9 @@ $(function() {
 		return false;
 	});
 
-	$('.list-notice a').on('click', function(){
+	$('.list-toggle a').on('click', function(){
 		if(!$(this).next().is(':visible')){
+			$('.list-toggle div').slideUp();
 			$(this).next().slideDown();
 			$(this).addClass('open');
 		} else {
@@ -101,6 +102,14 @@ $(function() {
 		} else {
 			$(this).parent().removeClass('send');
 		}
+	});
+
+	$('.tab-faq li a').on('click', function(){
+		var activeTab = $(this).attr('data-tab');
+		$('.tab-faq li').removeClass('on');
+		$('.faq .list-toggle').removeClass('curr');
+		$(this).parent().addClass('on');
+		$('#' + activeTab).addClass('curr');
 	});
 
 

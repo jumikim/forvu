@@ -14,37 +14,44 @@
 
 <body>
 	<div id="contents">
-		<main class="container join">
+		<main class="container">
 			<!-- // header -->
 			<header class="action-bar">
-				<a href="#" class="back"><img src="./images/ico_back.png" alt="" /></a>	
-				<h2>패스워드 찾기</h2>
+				<a href="./setting.html" class="back"><img src="./images/ico_back.png" alt="" /></a>	
+				<h2>휴대폰 정보 수정</h2>
 			</header>
 			<!-- header // -->
 
-			<!-- 입력값 비일치 시, <section class="join-input"> 위치에 class="fail" 추가-->
-			<section class="join-input find-pw fail">
-				<ul class="input-box">
+			<section class="phone-edit">
+				<ul class="input-box conf-number">
 					<li>
-						<!-- 경고페이지, <spaan class="send"> 추가 : 발송버튼 none 재발송버튼 block -->
 						<span>
-							<label for="mail">이메일</label>
-							<input type="text" id="mail" />
-							<a href="#" class="btn-round btn-send">발송</a>
-							<a href="#" class="btn-round btn-resend">재발송</a>
+							<label for="phone">번호</label>
+							<input type="number" id="phone" />
+							<a href="#" class="btn-round on btn-send">전송</a>
+							<!-- <a href="#" class="btn-round on btn-resend">재전송</a> -->
 						</span>
 					</li>
 					<li>
 						<span>
-							<label for="mail">임시번호 입력</label>
-							<input type="text" id="mail" />
+							<label for="confirm">인증번호 입력</label>
+							<input type="number" id="confirm" />
 							<a href="#" class="btn-round on">확인</a>
+							<!-- <a href="#" class="btn-round on">완료</a> -->
 						</span>
-						<strong class="notice">▲ 임시번호가 일치하지 않습니다.</strong>
+						<strong class="notice">▲ 인증번호가 일치하지 않습니다.</strong>
 					</li>
 				</ul>
-				<a href="#" class="btn-type01">다음</a>
+				<a href="#" class="btn-type01">확인</a>
 			</section>
+
+			<article class="gnb">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Forvu It</a></li>
+					<li class="on"><a href="#">Profile</a></li>
+				</ul>
+			</article>
 		</main>
 	</div>
 
