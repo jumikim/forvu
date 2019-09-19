@@ -456,6 +456,24 @@ body {overflow-x:hidden;height:100%;-webkit-overflow-scrolling:touch;}
 	.point-box > span a:first-child {border-right:1px solid rgba(0, 0, 0, 0.08);}
 	.point-box .inactive {color:#d0d0d0;cursor:default;}
 
+	.list-breakdown .top {overflow:hidden;padding:16px 20px 10px;border-bottom:1px solid #7278e8;}
+	.list-breakdown .top:after {display:block;content:'';clear:both;}
+	.list-breakdown .top span {float:left;display:inline-block;font-size:12px;line-height:1.5;color:#d0d0d0;}
+	.list-breakdown .top strong {display:inline-block;margin-left:10px;font-size:16px;line-height:1.5;color:#666;}
+	.list-breakdown .top em {float:right;font-size:15px;line-height:1.47;color:#7278e8;}
+	.list-breakdown li {padding:20px;box-shadow:0 1px 1px 0 rgba(232, 232, 232, 0.5);-webkit-box-shadow:0 1px 1px 0 rgba(232, 232, 232, 0.5);-ms-box-shadow:0 1px 1px 0 rgba(232, 232, 232, 0.5);}
+	.list-breakdown li a {position:relative;display:block;background:url('../../images/btn_arrow-go-r.png') 100% 100% no-repeat;background-size:auto 11px;}
+	.list-breakdown li span {font-size:15px;line-height:1.47;color:#666;}
+	.list-breakdown li p {margin-top:13px;font-size:15px;line-height:1.47;color:#999;}
+	.list-breakdown li strong {font-size:18px;line-height:1.5;color:#ff6200;}
+	.list-breakdown li strong em {margin-left:10px;font-size:15px;line-height:1.47;color:#d0d0d0;}
+	.list-breakdown li a > strong {position:absolute;top:0;right:0;}
+	.list-breakdown li.flex {display:flex;justify-content:space-between;align-items:center;}
+	.list-breakdown li.flex div:last-child {text-align:right;}
+	.list-breakdown li.flex div span {display:block;margin-top:13px;}
+	.list-breakdown .purple {color:#7278e8;}
+
+
 
 	/* popup */
 	.popup-wrap {display:none;overflow-y:scroll;position:fixed;top:0;left:0;width:100%;height:100%;-webkit-backdrop-filter:blur(15px);backdrop-filter:blur(15px);z-index:999;background:rgba(0, 0, 0, .6);}
@@ -519,7 +537,18 @@ body {overflow-x:hidden;height:100%;-webkit-overflow-scrolling:touch;}
 	#pop-wait {position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);}
 	#pop-wait p {padding-top:62px;background:url('../../images/ico_symbol-loading.png') 50% 0 no-repeat;background-size:auto 47px;font-size:18px;font-weight:500;line-height:1.5;color:#fff;text-align:center;}
 
-
+	.pop-breakdown {font-size:15px;line-height:1.47;}
+	.pop-breakdown span {color:#666;}
+	.pop-breakdown > strong {display:block;font-size:18px;line-height:1.5;text-align:center;color:#666;text-align:center;}
+	.pop-breakdown > ul {margin-top:20px;padding:20px 20px 0;border-top:1px solid #e8e8e8;}
+	.pop-breakdown > ul li {margin-top:10px;display:flex;justify-content:space-between;}
+	.pop-breakdown > ul li strong {color:#a5a5a5;}
+	.pop-breakdown > ul li span {text-align:right;}
+	.pop-breakdown > div {display:flex;margin-top:30px;padding:30px 20px;justify-content:space-between;align-items:center;border-top:1px solid #e8e8e8;}
+	.pop-breakdown > div em {font-size:18px;line-height:1.5;}
+	.pop-breakdown > a {display:block;margin:0 -20px;box-shadow:0 -1px 0 0 rgba(0, 0, 0, 0.08);-webkit-box-shadow:0 -1px 0 0 rgba(0, 0, 0, 0.08);-ms-box-shadow:0 -1px 0 0 rgba(0, 0, 0, 0.08);text-align:center;font-size:14px;line-height:60px;color:#7278e8;}
+	.pop-breakdown .orange {color:#ff6200;}
+	.pop-breakdown .purple {color:#7278e8;}
 
 
 
