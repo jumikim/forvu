@@ -375,6 +375,15 @@ body {overflow-x:hidden;height:100%;-webkit-overflow-scrolling:touch;}
 
 	.notice-box {padding:40px;font-size:15px;line-height:1.47;color:#666;}
 	.notice-box ol {margin:20px 0;}
+	.notice-box h3 {font-size:16px;line-height:1.5;text-align:center;color:#7278e8;}
+	.notice-box h3 + strong {margin-top:40px;}
+	.notice-box strong {display:block;}
+
+	.list-notice li {position:relative;}
+	.list-notice a {box-shadow:0 1px 1px 0 rgba(232, 232, 232, 0.5);-webkit-box-shadow:0 1px 1px 0 rgba(232, 232, 232, 0.5);-ms-box-shadow:0 1px 1px 0 rgba(232, 232, 232, 0.5);}
+	.list-notice a:after {content:'';width:15px;height:9px;position:absolute;top:30px;right:30px;background:url('../../images/btn_arrow-more.png') 0 0 no-repeat;background-size:auto 9px;transition:transform .2s;-webkit-transition:transform .2s;-ms-transition:transform .2s;}
+	.list-notice a.open:after {transform:rotate(180deg);-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);}
+	.list-notice div {display:none;padding:30px 35px;font-size:14px;line-height:1.43;color:#999;}
 
 	.info-edit {margin:0 20px;}
 	.info-edit .input-box + .input-box {margin-top:40px;}

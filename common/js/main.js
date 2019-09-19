@@ -75,6 +75,17 @@ $(function() {
 		return false;
 	});
 
+	$('.list-notice a').on('click', function(){
+		if(!$(this).next().is(':visible')){
+			$(this).next().slideDown();
+			$(this).addClass('open');
+		} else {
+			$(this).next().slideUp();
+			$(this).removeClass('open');
+		}
+		return false;
+	});
+
 	// 임시 
 	$('.overlap .btn-round').on('click', function(){
 		if(!$(this).parent().hasClass('overlap-conf')){
