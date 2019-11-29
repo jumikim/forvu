@@ -154,7 +154,9 @@ body {overflow-x:hidden;height:100%;-webkit-overflow-scrolling:touch;}
 		box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;
 	}
 	.login .login-btn .default {background:#717ae1;border:none;color:#fff;}
-	.login .notice {display:none;position:absolute;top:339px;left:0;width:100%;padding-top:15px;background:url('../../images/ico_warning.png')50% 0 no-repeat;background-size:auto 11px;font-size:14px;line-height:1.43;color:#ff6200;}
+	.login .notice		{display:none;position:absolute;top:339px;left:0;width:100%;padding-top:15px;background:url('../../images/ico_warning.png')50% 0 no-repeat;background-size:auto 11px;font-size:14px;line-height:1.43;color:#ff6200;}
+	.login .notice_01	{display:none;position:relative;top:30px;left:0;width:100%;padding-top:15px;background:url('../../images/ico_warning.png')50% 0 no-repeat;background-size:auto 11px;font-size:14px;line-height:1.43;color:#ff6200;}
+	
 	.login .login-guide {margin-top:70px;}
 	.login .login-guide p {margin-top:15px;font-size:14px;line-height:1.43;color:#666;}
 	.login .login-guide p a {color:#535eea;text-decoration:underline;}
